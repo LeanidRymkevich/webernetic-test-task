@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  &, &::before, &::after{
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: 10px;
+  font-family: $main-font-family;
+  font-weight: $main-font-weight;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+body._no-scroll {
+  overflow: hidden;
+}
+
+a {
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  padding: 36px 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    padding: 24px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 14px 24px;
+  }
+}
