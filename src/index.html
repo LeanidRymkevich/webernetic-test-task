@@ -39,6 +39,40 @@
       </section>
     </main>
   </div>
+  <div class="modal">
+    <div class="modal__window">
+      <div class="modal__window-wrapper">
+        <button class="modal__close-btn close-btn">
+          <span class="cross">
+            <span class="cross__bar cross__bar_left"></span>
+            <span class="cross__bar cross__bar_right"></span>
+          </span>
+        </button>
+        <h2 class="modal__title">Войти в систему</h2>
+        <form class="modal__form form">
+          <div class="form__inputs">
+            <div class="form__email-container">
+              <input class="form__email text-input" type="text" placeholder="Email/Телефон">
+            </div>
+            <div class="form__password-container">
+              <input class="form__password text-input" type="password" placeholder="Пароль">
+            </div>
+          </div>
+          <div class="form__memorize-container">
+            <label class="form__memorize-label" for="memorize-password-btn">Запомнить пароль</label>
+            <input class="form__memorize-checkbox" type="checkbox" id="memorize-password-btn">
+          </div>
+          <a class="form__restore-link link" href="#">Восстановить</a>
+          <div class="form__btn-container">
+            <button class="form__enter-btn btn btn_colored btn_rectangular">Войти</button>
+            <button class="form__sign-in-btn btn btn_rectangular">Зарегистрироваться</button>
+          </div>
+        </form>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-underlay"></div>
 </body>
 
 </html>
