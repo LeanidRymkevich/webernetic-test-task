@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
     "build": "webpack --config ./webpack.config.js --env mode=prod",
-    "deploy": "npm run build && npx gh-pages -d ./dist -e ./webernetic"
+    "deploy": "npm run build && npx gh-pages -d ./dist -e ./"
   },
   "author": "",
   "license": "ISC",
