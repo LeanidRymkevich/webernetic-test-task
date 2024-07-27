@@ -6,3 +6,10 @@
 
 // basic styles
 @import "@src/styles/basic";
+
+// components
+@import "@src/styles/components/btn";
+@import "@src/styles/components/arrow";
+
+// views
+@import "@src/styles/main";

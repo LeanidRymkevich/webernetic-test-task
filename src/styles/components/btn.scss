@@ -1,0 +1,68 @@
+.btn {
+  @extend %medium-Manrope;
+  font-size: 1.8rem;
+  line-height: 2.88rem;
+  text-align: center;
+  color: $btn-bg-color;
+  background-color: transparent;
+  border: 1px solid $btn-bg-color;
+  transition: color 0.3s ease,
+              background-color 0.3s ease,
+              transform 0.3s ease;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  &:hover {
+    color: $light-text-color;
+    background-color: $btn-bg-color;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &_rounded {
+    border-radius: 60px;
+    padding: 11px 12px 11px 24px;
+
+    @media screen and (max-width: 768px) {
+      padding: 10px 10px 10px 18px;
+    }
+  }
+
+  &_rectangular{
+    padding: 17px;
+    text-align: center;
+  }
+  
+  &_colored {
+    color: $light-text-color;
+    background-color: $btn-bg-color;
+
+    &:hover {
+      color: $btn-bg-color;
+      background-color: $light-text-color;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+  
+  &_arrowed {
+    @include flex ($justify: space-between, $align: center);
+
+    &:hover .arrow,
+    &:active .arrow {
+      background-color: $btn-bg-color;
+    }
+
+    &:hover .arrow__bar,
+    &:active .arrow__bar {
+      background-color: $light-text-color;
+    }
+  }
+}

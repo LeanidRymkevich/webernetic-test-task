@@ -1,0 +1,52 @@
+.arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  aspect-ratio: 1 / 1;
+  background-color: $light-text-color;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+
+  @media screen and (max-width: 768px) {
+    width: 36px;
+  }
+}
+
+.arrow__square {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.arrow__bar {
+  position: absolute;
+  display: inline-block;
+  height: 2px;
+  border-radius: 1px;
+  background-color: $main-text-color;
+  transition: background-color 0.3s ease;
+}
+
+.arrow__bar_top {
+  width: 11px;
+  top: 0;
+  right: 0;
+}
+
+.arrow__bar_right {
+  top: -2px;
+  right: 0;
+  width: 11px;
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+}
+
+.arrow__bar_diagonal {
+  top: 0;
+  right: 1px;
+  width: calc(100% * 1.41);
+  transform-origin: center right;
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,103 @@
+.demo {
+  @include flex ($justify: space-between, $align: center);
+  background-color: $main-bg-color;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media screen and (max-width: 1050px) {
+    @include flex ($direction: column, $align: center, $gap: 0);
+  }
+}
+
+.demo__content {
+  max-width: 538px;
+  @include flex ($direction: column, $gap: 3.6rem);
+  margin-left: 72px;
+
+  @media screen and (max-width: 1050px) {
+    max-width: 100%;
+    width: 100%;
+    gap: 2.4rem;
+    padding: 24px 24px 0 24px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 375px) {
+    gap: 1.8rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+.demo__text {
+  @include flex ($direction: column, $gap: 1.8rem);
+
+  @media screen and (max-width: 375px) {
+    gap: 1.4rem;
+  }
+}
+
+.demo__title {
+  @extend %medium-Manrope;
+  font-size: 3rem;
+  line-height: 4.8rem;
+  color: $main-text-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 1.7rem;
+    line-height: 2.72rem;
+  }
+}
+
+.demo__info {
+  @extend %regular-Manrope;
+  font-size: 1.7rem;
+  line-height: 2.72rem;
+  color: $secondary-text-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 1.3rem;
+    line-height: 2.08rem;
+  }
+}
+
+.demo__img-container {
+  display: block;
+  max-width: 910px;
+  min-width: 500px;
+
+  @media screen and (max-width: 1050px) {
+    max-width: 100%;
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+.demo__img {
+  display: block;
+  width: 100%;
+}
+
+.demo__btn {
+  @media screen and (max-width: 375px) {
+    align-self: center;
+  }
+}
+
+.demo__btn-text {
+  margin-right: 48px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 19px;
+  }
+}
