@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webernetic Test Task</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <section class="demo">
+        <div class="demo__content">
+          <div class="demo__text">
+            <h1 class="demo__title">Демо-версия</h1>
+            <p class="demo__info">
+              За 18 лет деятельности было реализовано более 500 крупных, а так же,
+              не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить
+            </p>
+          </div>
+          <button class="demo__btn btn btn_rounded btn_colored btn_arrowed">
+            <span class="demo__btn-text">Попробовать бесплатно</span>
+            <span class="arrow">
+              <span class="arrow__square">
+                <span class="arrow__bar arrow__bar_top"></span>
+                <span class="arrow__bar arrow__bar_right"></span>
+                <span class="arrow__bar arrow__bar_diagonal"></span>
+              </span>
+            </span>
+          </button>
+        </div>
+        <picture class="demo__img-container">
+          <source srcset="./asserts/images/computer_img_375.jpg" media="(max-width: 375px)">
+          <source srcset="./asserts/images/computer_img_768.jpg" media="(max-width: 768px)">
+          <source srcset="./asserts/images/computer_img_1440.jpg" media="(max-width: 1440px)">
+          <img class="demo__img" src="./asserts/images/computer_img_1920.jpg" alt="computer image">
+        </picture>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
