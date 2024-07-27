@@ -1,0 +1,21 @@
+.text-input {
+  @extend %medium-Manrope;
+  font-size: 1.8rem;
+  line-height: 2.459rem;
+  color: $black-color;
+  background-color: $form-input-bg-color;
+  padding: 24px;
+  border: none;
+  border-radius: 10px;
+  outline: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  &:focus {
+    background-color: transparent;
+    outline-color: $black-color;
+  }
+
+  &::placeholder {
+    color: $main-text-color;
+  }
+}

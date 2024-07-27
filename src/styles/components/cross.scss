@@ -1,0 +1,26 @@
+.cross {
+  position: relative;
+  width: 12px;
+  aspect-ratio: 1 / 1;
+}
+
+.cross__bar {
+  position: absolute;
+  top: 50%;
+  left: -2px;
+  width: calc(100% * 1.41);
+  height: 2px;
+  background-color: $black-color;
+  border-radius: 1px;
+  transform-origin: center center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &_left {
+    transform: rotate(45deg);
+  }
+
+  &_right {
+    transform: rotate(-45deg);
+  }
+}
+

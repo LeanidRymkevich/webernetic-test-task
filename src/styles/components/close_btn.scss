@@ -1,0 +1,17 @@
+.close-btn {
+  width: 52px;
+  aspect-ratio: 1 / 1;
+  background-color: $light-text-color;
+  border-radius: 10px;
+  @include flex ($justify: center, $align: center, $gap: 0);
+  outline: 2px solid transparent;
+  transition: outline-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    outline: 2px solid $black-color;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}

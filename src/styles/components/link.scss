@@ -1,0 +1,16 @@
+.link {
+  @extend %medium-Manrope;
+  font-size: 2.0rem;
+  line-height: 2.732rem;
+  color: $btn-bg-color;
+  text-decoration: underline solid transparent;
+  transition: text-decoration-color 0.3s ease, color 0.1s ease;
+
+  &:hover {
+    text-decoration-color: $btn-bg-color;
+  }
+
+  &:active {
+    color: darkblue;
+  }
+}

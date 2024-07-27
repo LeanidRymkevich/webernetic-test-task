@@ -1,0 +1,119 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  @include flex ($justify: center, $align: center, $gap: 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.modal.modal_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-underlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px) contrast(40%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal.modal_visible ~ .modal-underlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__window {
+  background-color: $modal-window-bg-color;
+  padding: 24px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.modal__window-wrapper {
+  width: 100%;
+  @include flex ($direction: column, $gap: 0);
+}
+
+.modal__close-btn {
+  align-self: flex-end;
+  margin-bottom: 4px;
+}
+
+.modal__title {
+  @extend %medium-Manrope;
+  font-size: 2.4rem;
+  line-height: 3.278rem;
+}
+
+.modal__form {
+  margin-top: 18px;
+}
+
+.form {
+  width: 100%;
+  @include flex ($direction: column, $gap: 0);
+}
+
+.form__inputs,
+.form__email,
+.form__password,
+.form__email-container,
+.form__password-container,
+.form__btn-container {
+  width: 100%;
+}
+
+.form__email-container {
+  margin-bottom: 4px;
+}
+
+.form__password-container {
+  margin-bottom: 24px;
+}
+
+.form__memorize-container {
+  @include flex ($align: center, $gap: 17px);
+  margin-bottom: 24px;
+}
+
+.form__memorize-label {
+  order: 2;
+  @extend %regular-Manrope;
+  font-size: 1.8rem;
+  line-height: 2.459rem;
+  color: $dark-text-color;
+}
+
+.form__memorize-checkbox {
+  order: 1;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-color: $dark-text-color;
+  margin-left: 3px;
+}
+
+.form__restore-link {
+  margin-bottom: 3.6rem;
+}
+
+.form__enter-btn, 
+.form__sign-in-btn {
+  width: 100%;
+}
+
+.form__enter-btn {
+  margin-bottom: 4px;
+}
